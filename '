@@ -1,0 +1,14 @@
+a = [1, 10, 5, 2, 1, 5]
+
+def bubble_sort(array):
+    for i in range(len(array) -1 ):
+        #print(array[i])
+        #print(array[i+1]) 
+        if array[i+1] < array[i]:
+            tmp = array[i]
+            array[i] = array[i+1]
+            array[i+1] = temp          
+       
+    return array
+
+print(bubble_sort(a))
